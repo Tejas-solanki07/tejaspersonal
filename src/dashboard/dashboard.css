@@ -1,0 +1,23 @@
+.MuiCalendarPicker: {
+    styleOverrides: {
+      root: {
+        width: "100%",
+        "& .Mui-selected, & .Mui-selected:focus, & .Mui-selected:hover": {
+          color: `${palette.common.white} !important`,
+          backgroundColor: `${green["A400"]} !important`,
+        },
+      },
+      viewTransitionContainer: {
+        "& > div > div": {
+          justifyContent: "space-between !important",
+          paddingLeft: spacing(1.25),
+          paddingRight: spacing(1.25),
+        },
+        "& div[role=row]": {
+          paddingLeft: spacing(1.25),
+          paddingRight: spacing(1.25),
+          justifyContent: "space-between !important",
+        },
+      },
+    },
+}
